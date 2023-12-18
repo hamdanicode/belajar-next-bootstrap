@@ -1,11 +1,20 @@
-import 'bootstrap/dist/css/bootstrap.css'
 import Image from 'next/image'
 import styles from './page.module.css'
+import { Button, Container } from 'react-bootstrap'
+import Link from 'next/link'
+import LoremIpsum, { loremIpsum } from 'react-lorem-ipsum'
 
 export default function Home() {
   return (
-    <main>
-      <h1 className="text-danger">Hello apa kabar</h1>
-    </main>
+    <div className="bg-dark text-light p-5">
+      <div className="container bg-dark py-5">
+        <h1 className="display-4">Welcome to My Shop</h1>
+        <hr />
+          <p>
+            <LoremIpsum p={1} avgSentencesPerParagraph={4} />
+          </p>
+          <Link href="/product" className="btn btn-primary">Lihat Produk Unggulan</Link>
+      </div>
+    </div>
   )
 }
