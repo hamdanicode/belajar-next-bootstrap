@@ -6,12 +6,13 @@ export default function NavberApp() {
     return (
         <Navbar expand="lg" className="bg-body-tertiary">
             <Container>
-                <Navbar.Brand href="#home">My-Shop</Navbar.Brand>
+                <Navbar.Brand as={Link} href="/">LNextJs</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link as={Link} href="/">Home</Nav.Link>
                         <Nav.Link as={Link} href="/product">Products</Nav.Link>
+                        <Nav.Link as={Link} href="/post">Post</Nav.Link>
                         <NavDropdown title="About US" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">
